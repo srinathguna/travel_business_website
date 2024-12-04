@@ -1,0 +1,49 @@
+//utils
+@import 'utils/variables';
+@import 'utils/mixins';
+
+//base
+@import 'base/reset';
+@import 'base/typography';
+
+//layout
+@import 'layout/header';
+
+// components
+@import 'components/buttons';
+@import 'components/cards';
+
+// Pages
+@import 'pages/home';
+
+html{
+    font-size: 16px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: $font_base;
+}
+
+.container{
+    max-width: 1290px;
+    margin:  0 auto;
+}
+
+@media screen and (max-width:1400px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 13px;
+    }
+}
+
